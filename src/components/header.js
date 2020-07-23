@@ -4,10 +4,11 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      color: `black`,
       marginBottom: `1.45rem`,
     }}
   >
-    I'm the header
+   Interactive Media Elements
   </header>
 )
 

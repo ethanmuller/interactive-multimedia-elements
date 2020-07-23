@@ -9,7 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import styles from "./layout.module.css"
+
+import Title from "../vector/ime.svg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +26,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className={styles.marquee}>
+        <div className={styles.marqueeInner}>
+          <Title className={styles.title} />
+          <Title className={styles.title} />
+        </div>
+      </div>
       <div
         style={{
           margin: `0 auto`,

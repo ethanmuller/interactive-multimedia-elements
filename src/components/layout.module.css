@@ -1,0 +1,24 @@
+@keyframes marquee {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%, 0);
+  }
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  width: 300vw;
+}
+
+.title {
+  /* background: yellow; */
+  transform-origin: 0 100%;
+  animation: marquee 60s linear infinite;
+  /* transform: rotate(90deg); */
+}
