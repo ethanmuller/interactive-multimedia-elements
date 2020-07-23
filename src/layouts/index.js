@@ -14,13 +14,7 @@ const Layout = ({ children }) => {
           <Title className={styles.title} />
         </div>
       </div>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.7rem 2.2rem 1.45rem`,
-        }}
-      >
+      <div className={styles.pageWrapper}>
         <main>{children}</main>
       </div>
     </>

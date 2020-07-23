@@ -1,13 +1,15 @@
 :root {
   --font-mono: 'IBM Plex Mono', monospaced;
   --font-serif: 'DM Serif Display', sans-serif;
+
+  --bg: #5200FF;
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  background-color: #5200FF;
+  background-color: var(--bg);
   color: white;
 
   font-family: var(--font-mono);
