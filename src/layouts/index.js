@@ -5,7 +5,8 @@ import styles from "./layout.module.css"
 
 import Title from "../vector/ime.svg"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageContext }) => {
+  console.log(pageContext.frontmatter)
   return (
     <>
       <div className={styles.marquee}>
