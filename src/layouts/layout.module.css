@@ -13,9 +13,9 @@
 }
 
 .page-wrapper {
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 1.7rem 2.2rem 1.45rem;
+  /* margin: 0 auto; */
+  /* max-width: 40rem; */
+  /* padding: 1.7rem 2.2rem 1.45rem; */
 }
 
 .marquee {
@@ -37,7 +37,9 @@
 
 @media (min-height: 500px) {
   .page-wrapper {
-    padding: 1.7rem 3rem 1.45rem 1.5rem;
+    /* padding: 1.7rem 3rem 1.45rem 1.5rem; */
+    padding-right: calc(400vh / 2 * 0.0200483926719668);
+    padding-right: 58px;
   }
 
   .marquee {
@@ -50,7 +52,6 @@
   }
 
   .marquee-inner {
-    transform: translateY(-0.4rem);
     width: 400vh;
   }
 }

@@ -1,0 +1,17 @@
+---
+title: Another Markdown Test
+label: r2
+layout: inner-page
+thing: yas
+---
+
+export const metadata = {
+  name: "World",
+  path: "/world",
+};
+
+# Hello, <span children={metadata.name} />
+
+more markdown!
+
+<span children={props.frontmatter.label} />
